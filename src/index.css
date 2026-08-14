@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────── */
+@layer base {
+  :root {
+    --color-surface-container-high: 233, 231, 238;
+    --color-tertiary-container: 109, 52, 0;
+    --color-on-error-container: 147, 0, 10;
+    --color-on-secondary-fixed: 18, 28, 40;
+    --color-inverse-primary: 178, 197, 255;
+    --color-secondary: 85, 95, 109;
+    --color-on-primary-fixed-variant: 39, 67, 135;
+    --color-surface-container: 238, 237, 244;
+    --color-on-tertiary-container: 240, 158, 99;
+    --color-secondary-fixed: 217, 227, 244;
+    --color-tertiary-fixed: 255, 220, 198;
+    --color-on-primary-container: 148, 174, 250;
+    --color-surface-container-highest: 227, 226, 232;
+    --color-on-primary: 255, 255, 255;
+    --color-surface-container-lowest: 255, 255, 255;
+    --color-secondary-fixed-dim: 189, 199, 216;
+    --color-primary-dark: 24, 45, 96;
+    --color-success: 22, 131, 91;
+    --color-on-tertiary: 255, 255, 255;
+    --color-surface-bright: 250, 248, 255;
+    --color-secondary-container: 214, 224, 241;
+    --color-surface-dim: 218, 217, 224;
+    --color-on-surface: 26, 27, 32;
+    --color-on-tertiary-fixed-variant: 113, 55, 2;
+    --color-danger: 194, 65, 65;
+    --color-inverse-surface: 47, 48, 53;
+    --color-primary-fixed-dim: 178, 197, 255;
+    --color-on-secondary-fixed-variant: 62, 71, 85;
+    --color-primary-fixed: 218, 226, 255;
+    --color-on-background: 26, 27, 32;
+    --color-inverse-on-surface: 241, 240, 246;
+    --color-on-error: 255, 255, 255;
+    --color-on-primary-fixed: 0, 24, 73;
+    --color-outline-variant: 196, 198, 210;
+    --color-surface: 250, 248, 255;
+    --color-background: 250, 248, 255;
+    --color-surface-variant: 227, 226, 232;
+    --color-background-blue: 242, 246, 255;
+    --color-surface-container-low: 244, 243, 249;
+    --color-primary-light: 77, 109, 184;
+    --color-error-container: 255, 218, 214;
+    --color-primary: 2, 40, 109;
+    --color-warning: 183, 121, 31;
+    --color-on-surface-variant: 68, 70, 80;
+    --color-primary-container: 35, 64, 132;
+    --color-on-secondary: 255, 255, 255;
+    --color-on-secondary-container: 89, 99, 114;
+    --color-error: 186, 26, 26;
+    --color-on-tertiary-fixed: 48, 20, 0;
+    --color-tertiary: 76, 34, 0;
+    --color-text-muted: 107, 114, 128;
+    --color-tertiary-fixed-dim: 255, 183, 133;
+    --color-outline: 116, 118, 130;
+    --color-background-soft: 247, 249, 252;
+    --color-surface-tint: 65, 92, 161;
+    --color-button-primary: 2, 40, 109;
+  }
+
+  .dark {
+    --color-tertiary-fixed-dim: 192, 193, 255;
+    --color-on-secondary: 38, 49, 67;
+    --color-tertiary-fixed: 225, 224, 255;
+    --color-background: 11, 19, 38;
+    --color-on-tertiary-fixed: 7, 0, 108;
+    --color-on-primary-container: 0, 40, 93;
+    --color-on-error: 105, 0, 5;
+    --color-on-surface: 218, 226, 253;
+    --color-border-subtle: 51, 65, 85;
+    --color-surface-glass: 30, 41, 59;
+    --color-surface-dim: 11, 19, 38;
+    --color-on-background: 218, 226, 253;
+    --color-primary: 173, 198, 255;
+    --color-secondary-fixed-dim: 188, 199, 222;
+    --color-primary-container: 77, 142, 255;
+    --color-surface-bright: 49, 57, 77;
+    --color-inverse-primary: 0, 90, 194;
+    --color-tertiary: 192, 193, 255;
+    --color-on-tertiary: 16, 0, 169;
+    --color-surface-container-highest: 45, 52, 73;
+    --color-surface: 11, 19, 38;
+    --color-accent-blue: 96, 165, 250;
+    --color-primary-fixed: 216, 226, 255;
+    --color-on-secondary-fixed: 17, 28, 45;
+    --color-on-surface-variant: 194, 198, 214;
+    --color-tertiary-container: 128, 131, 255;
+    --color-error: 255, 180, 171;
+    --color-inverse-on-surface: 40, 48, 68;
+    --color-on-tertiary-fixed-variant: 47, 46, 190;
+    --color-text-secondary: 148, 163, 184;
+    --color-secondary-fixed: 216, 227, 251;
+    --color-surface-container-low: 19, 27, 46;
+    --color-inverse-surface: 218, 226, 253;
+    --color-secondary-container: 62, 73, 93;
+    --color-on-secondary-container: 174, 185, 208;
+    --color-surface-container-high: 34, 42, 61;
+    --color-surface-elevated: 30, 41, 59;
+    --color-outline: 140, 144, 159;
+    --color-outline-variant: 66, 71, 84;
+    --color-success-muted: 6, 78, 59;
+    --color-on-primary: 0, 46, 106;
+    --color-surface-container-lowest: 6, 14, 32;
+    --color-surface-main: 15, 23, 42;
+    --color-on-secondary-fixed-variant: 60, 71, 90;
+    --color-on-error-container: 255, 218, 214;
+    --color-on-primary-fixed-variant: 0, 67, 149;
+    --color-text-primary: 248, 250, 252;
+    --color-on-tertiary-container: 13, 0, 150;
+    --color-secondary: 188, 199, 222;
+    --color-error-container: 147, 0, 10;
+    --color-on-primary-fixed: 0, 26, 66;
+    --color-surface-tint: 173, 198, 255;
+    --color-surface-container: 23, 31, 51;
+    --color-surface-variant: 45, 52, 73;
+    --color-primary-fixed-dim: 173, 198, 255;
+    --color-button-primary: 0, 62, 177;
+    --color-primary-dark: 173, 198, 255;
+    --color-success: 74, 222, 128;
+    --color-danger: 248, 113, 113;
+    --color-background-blue: 14, 24, 48;
+    --color-primary-light: 100, 134, 219;
+    --color-warning: 251, 191, 36;
+    --color-text-muted: 156, 163, 175;
+    --color-background-soft: 22, 34, 59;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-on-background font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-light rounded;
+  }
+
+  ::selection {
+    @apply bg-primary-light text-white;
+  }
+}
+
+/* ─── Components ────────────────────────── */
+@layer components {
+  /* Glass navigation */
+  .glass-nav {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  /* Soft shadow card */
+  .soft-shadow {
+    box-shadow: 0 4px 24px rgba(2, 40, 109, 0.06);
+  }
+
+  /* Timeline vertical line */
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    width: 2px;
+    background-color: theme('colors.outline-variant');
+    z-index: 0;
+  }
+
+  /* Scroll reveal utility */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Section label cap */
+  .section-label {
+    @apply text-label-caps font-semibold text-primary-light uppercase tracking-widest mb-3 block;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-button-primary text-white font-semibold text-body-md rounded-lg hover:bg-primary-dark active:scale-95 transition-all duration-300 soft-shadow;
+  }
+
+  /* Outline button */
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-semibold text-body-md rounded-lg hover:bg-background-blue active:scale-95 transition-all duration-300;
+  }
+
+  /* Capability / expertise card */
+  .cap-card {
+    @apply bg-surface-container-lowest p-8 rounded-xl soft-shadow border border-outline-variant border-opacity-30 hover:border-primary-light transition-all duration-300 hover:-translate-y-1;
+  }
+
+  /* Icon badge */
+  .icon-badge {
+    @apply w-12 h-12 bg-background-blue rounded-lg flex items-center justify-center mb-6 text-primary flex-shrink-0;
+  }
+}
+
+/* ─── Utilities ─────────────────────────── */
+@layer utilities {
+  /* Stagger delay utilities for reveal animations */
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .delay-500 { transition-delay: 500ms; }
+  .delay-600 { transition-delay: 600ms; }
+}
+
+/* ─── Custom Scrollbar ──────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #02286d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #011c52;
+}
