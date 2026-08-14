@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/primadev.png" alt="PT Primadev Digital Technology Logo" width="150" />
-  <h1>Prima Wisnu Abror Azmi — Portfolio</h1>
+  <h1>Prima Wisnu Abror Azmi - Portfolio</h1>
   <p><strong>Professional Portfolio & Digital Identity</strong></p>
   <p>A modern, interactive, and bilingual personal portfolio showcasing my expertise in Technology & Business Problem Solving, AI Architecture, and Digital Transformation.</p>
   <br />
