@@ -8,8 +8,8 @@ export function ThemeProvider({ children }) {
     const saved = localStorage.getItem('porto_theme')
     if (saved) return saved
     
-    // Default to dark mode as requested by the new design
-    return 'dark'
+    // Default to light mode
+    return 'light'
   })
 
   // Apply class to html tag and save to local storage

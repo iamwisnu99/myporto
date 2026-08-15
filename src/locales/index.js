@@ -146,7 +146,7 @@ export const translations = {
       ai: 'AI & Pemecahan Masalah',
       business: 'Bisnis',
       contact: 'Kontak',
-      connect: "Mari Terhubung"
+      connect: "Join"
     },
     hero: {
       label: 'Penyelesai Masalah Teknologi & Bisnis',
