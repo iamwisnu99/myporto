@@ -20,7 +20,7 @@ export default function About() {
     >
       <div className="max-w-container-max mx-auto grid md:grid-cols-12 gap-10 md:gap-16 items-start relative z-10">
         {/* Left */}
-        <div className="md:col-span-5 reveal sticky top-24">
+        <div className="md:col-span-5 reveal md:sticky md:top-24">
           <span className="section-label">{t('about', 'label')}</span>
           <h2 className="text-h2-mobile md:text-h2 font-semibold text-primary-dark mb-8">
             {t('about', 'title')}
