@@ -80,19 +80,20 @@ export default function AIPrompting() {
             <h3 className="text-body-lg font-bold text-on-background mb-5">
               {t('ai', 'listTitle')}
             </h3>
-            <ul className="space-y-3">
-              {t('ai', 'list').map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span
-                    className="material-symbols-outlined text-primary-light text-[20px] mt-0.5 flex-shrink-0"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    check_circle
-                  </span>
-                  <span className="text-body-md text-on-surface-variant">{item}</span>
-                </li>
+            <div className="flex flex-col gap-3.5">
+              {t('ai', 'list').map((item, idx) => (
+                <div 
+                  key={idx} 
+                  className="group flex items-center gap-4 bg-surface-container-lowest p-4 md:p-5 rounded-2xl border border-outline-variant/20 soft-shadow hover:-translate-y-1 hover:shadow-lg hover:border-primary-light/50 transition-all duration-300 relative overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary-light/0 via-primary-light/5 to-transparent translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-700 ease-out" />
+                  <div className="w-10 h-10 rounded-full bg-background-blue border border-primary-light/20 text-primary flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-300 shadow-sm">
+                    <span className="text-body-md font-bold">{idx + 1}</span>
+                  </div>
+                  <span className="text-body-md text-on-surface-variant font-medium group-hover:text-primary-dark transition-colors relative z-10 leading-snug">{item}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Quote card */}
