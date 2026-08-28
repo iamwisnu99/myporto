@@ -36,7 +36,7 @@ export default function Contact() {
 
           {/* LinkedIn CTA */}
           <a
-            href="https://www.linkedin.com/in/prima-wisnu-abror-azmi-2b56a6428/"
+            href="https://www.linkedin.com/in/therealwisnu"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline w-full sm:w-auto"
