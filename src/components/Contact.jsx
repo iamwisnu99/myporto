@@ -6,27 +6,31 @@ export default function Contact() {
   const { t } = useLanguage()
 
   return (
-    <footer ref={ref} id="contact" className="bg-surface-container-low pt-20">
+    <footer ref={ref} id="contact" className="bg-surface-container-low relative overflow-hidden">
+      {/* Background accent */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full opacity-[0.03] pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(var(--color-primary), 1), transparent 70%)' }} />
+
       {/* Main contact area */}
-      <div className="max-w-container-max mx-auto px-5 mb-20 text-center">
+      <div className="max-w-container-max mx-auto px-5 pt-section-md pb-16 md:pt-section-lg md:pb-20 text-center relative z-10">
         <span className="section-label reveal">{t('contact', 'label')}</span>
 
-        <h2 className="reveal text-h1-mobile md:text-h1 font-bold text-primary-dark mb-6">
+        <h2 className="reveal text-h1-mobile md:text-h1 font-bold text-primary-dark mb-6 leading-tight">
           {t('contact', 'title')}
         </h2>
 
-        <p className="reveal delay-100 text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+        <p className="reveal delay-100 text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed">
           {t('contact', 'desc')}
         </p>
 
-        <div className="reveal delay-200 flex flex-col sm:flex-row justify-center items-center gap-5">
+        <div className="reveal delay-200 flex flex-col sm:flex-row justify-center items-center gap-4">
           {/* Email CTA */}
           <a
             href="mailto:primawisnu99@gmail.com"
             className="btn-primary w-full sm:w-auto"
           >
             <span
-              className="material-symbols-outlined mr-2"
+              className="material-symbols-outlined mr-2 text-[20px]"
               style={{ fontVariationSettings: "'FILL' 1" }}
             >
               mail
@@ -50,15 +54,15 @@ export default function Contact() {
       </div>
 
       {/* Footer bar */}
-      <div className="border-t border-outline-variant/20">
-        <div className="max-w-container-max mx-auto px-5 py-10 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-12 items-center">
+      <div className="border-t border-outline-variant/15">
+        <div className="max-w-container-max mx-auto px-5 py-8 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-12 items-center">
           {/* Brand */}
           <div className="text-center lg:text-left">
-            <p className="text-h2-mobile font-bold text-primary">Prima Wisnu</p>
+            <p className="text-[20px] font-extrabold text-primary">Prima Wisnu<span className="text-primary-light">.</span></p>
           </div>
 
           {/* Nav links */}
-          <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <nav className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {[
               { id: 'about', href: '#about' },
               { id: 'expertise', href: '#expertise' },
@@ -69,7 +73,8 @@ export default function Contact() {
               <a
                 key={link.id}
                 href={link.href}
-                className="text-body-sm text-on-surface-variant hover:text-primary transition-colors"
+                className="text-[13px] text-on-surface-variant hover:text-primary"
+                style={{ transition: 'color 0.2s ease' }}
               >
                 {t('nav', link.id)}
               </a>
@@ -77,7 +82,7 @@ export default function Contact() {
           </nav>
 
           {/* Copyright */}
-          <p className="text-body-sm text-on-surface-variant text-center lg:text-right">
+          <p className="text-[13px] text-on-surface-variant/70 text-center lg:text-right">
             © {new Date().getFullYear()} PRIMA WISNU ABROR AZMI.<br className="sm:hidden" /> {t('contact', 'rights')}
           </p>
         </div>

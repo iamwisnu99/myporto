@@ -3,10 +3,10 @@ import useReveal from '../hooks/useReveal'
 import { useLanguage } from '../context/LanguageContext'
 
 const principlesAccents = [
-  'border-primary bg-primary/5',
-  'border-primary-light bg-primary-light/5',
-  'border-outline-variant bg-surface-container',
-  'border-success bg-success/5',
+  { border: 'border-primary/30', bg: 'from-primary/[0.04] to-primary/[0.01]', iconBg: 'from-primary to-primary-light' },
+  { border: 'border-primary-light/30', bg: 'from-primary-light/[0.04] to-primary-light/[0.01]', iconBg: 'from-primary-light to-primary' },
+  { border: 'border-outline-variant/40', bg: 'from-outline-variant/[0.04] to-outline-variant/[0.01]', iconBg: 'from-primary-dark to-primary' },
+  { border: 'border-success/30', bg: 'from-success/[0.04] to-success/[0.01]', iconBg: 'from-success to-primary-light' },
 ]
 
 const principleIcons = ['target', 'diamond', 'search_check', 'account_tree']
@@ -17,80 +17,126 @@ export default function Mindset() {
   const [activeStep, setActiveStep] = useState(0)
 
   return (
-    <section ref={ref} id="process" className="py-section-md md:py-section-lg bg-surface-container-lowest px-5">
-      <div className="max-w-container-max mx-auto">
+    <section ref={ref} id="process" className="py-section-md md:py-section-lg bg-surface-container-lowest px-5 relative overflow-hidden">
+      {/* Background accent */}
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full opacity-[0.03] pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(var(--color-primary-light), 1), transparent 70%)' }} />
+
+      <div className="max-w-container-max mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-14 reveal">
           <span className="section-label">{t('mindset', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-semibold text-primary-dark">
+          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark">
             {t('mindset', 'title')}
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Principles — Bento Grid */}
-          <div className="lg:col-span-7 space-y-6">
-            <h3 className="text-body-xl font-bold text-primary-dark mb-6 reveal">How I Think</h3>
+          <div className="lg:col-span-7 space-y-5">
+            <h3 className="text-[18px] font-bold text-primary-dark mb-5 reveal">{t('mindset', 'howIThink')}</h3>
             <div className="grid sm:grid-cols-2 gap-4">
-              {t('mindset', 'principles').map((p, i) => (
-                <div
-                  key={p.title}
-                  className={`reveal delay-${i * 100} group p-6 rounded-3xl soft-shadow border-t-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${principlesAccents[i] || 'border-outline-variant bg-surface-container'}`}
-                >
-                  <div className="w-12 h-12 rounded-full bg-white/80 dark:bg-black/20 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
-                      {principleIcons[i] || 'lightbulb'}
-                    </span>
+              {t('mindset', 'principles').map((p, i) => {
+                const accent = principlesAccents[i] || principlesAccents[0]
+                return (
+                  <div
+                    key={p.title}
+                    className={`reveal delay-${i * 100} group p-6 rounded-2xl border ${accent.border} bg-gradient-to-br ${accent.bg} relative overflow-hidden`}
+                    style={{ transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(var(--color-primary), 0.08)' }}
+                    onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
+                  >
+                    <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${accent.iconBg} flex items-center justify-center mb-4 text-white group-hover:scale-105`}
+                      style={{ transition: 'transform 0.3s ease', boxShadow: '0 4px 12px rgba(var(--color-primary), 0.15)' }}>
+                      <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+                        {principleIcons[i] || 'lightbulb'}
+                      </span>
+                    </div>
+                    <h4 className="text-[15px] font-bold text-on-background mb-2 leading-tight">{p.title}</h4>
+                    <p className="text-[13px] font-medium text-primary-light mb-1.5 italic leading-snug">"{p.quote}"</p>
+                    <p className="text-[13px] text-on-surface-variant leading-relaxed">{p.desc}</p>
                   </div>
-                  <h4 className="text-body-md font-bold text-on-background mb-3 leading-tight">{p.title}</h4>
-                  <p className="text-body-sm font-semibold text-primary-light mb-2 italic">"{p.quote}"</p>
-                  <p className="text-body-sm text-on-surface-variant opacity-90">{p.desc}</p>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </div>
 
           {/* Timeline — Interactive Stepper */}
           <div className="lg:col-span-5 reveal delay-300">
-            <div className="bg-background-soft p-6 md:p-8 rounded-[2rem] border border-outline-variant/30 soft-shadow h-full">
-              <h3 className="text-body-xl font-bold text-primary-dark mb-8">{t('mindset', 'approachTitle')}</h3>
-              
+            <div className="bg-background-soft p-6 md:p-7 rounded-2xl border border-outline-variant/20 soft-shadow h-full">
+              <h3 className="text-[18px] font-bold text-primary-dark mb-7">{t('mindset', 'approachTitle')}</h3>
+
               <div className="relative">
                 {/* Vertical Line */}
-                <div className="absolute left-[15px] top-4 bottom-4 w-0.5 bg-outline-variant/30" />
+                <div className="absolute left-[15px] top-4 bottom-4 w-0.5 bg-outline-variant/20 rounded-full" />
 
-                <div className="space-y-4 relative z-10">
+                <div className="space-y-3 relative z-10">
                   {t('mindset', 'approachItems').map((s, i) => {
                     const isActive = activeStep === i
                     return (
-                      <div 
-                        key={s.title} 
-                        className="relative pl-12 cursor-pointer group"
+                      <div
+                        key={i}
+                        className="relative pl-11 cursor-pointer group"
                         onClick={() => setActiveStep(i)}
                       >
                         {/* Dot indicator */}
-                        <div className={`absolute left-0 top-1.5 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-colors duration-300 ${isActive ? 'bg-primary border-primary' : 'bg-surface-container-lowest border-outline-variant group-hover:border-primary-light'}`}>
-                          <span className={`text-[12px] font-bold ${isActive ? 'text-white' : 'text-on-surface-variant'}`}>
+                        <div
+                          className={`absolute left-0 top-1.5 w-8 h-8 rounded-lg border-2 flex items-center justify-center ${
+                            isActive
+                              ? 'border-primary text-white'
+                              : 'bg-surface-container-lowest border-outline-variant/30 group-hover:border-primary-light/50'
+                          }`}
+                          style={{
+                            transition: 'all 0.3s ease',
+                            ...(isActive ? { background: 'linear-gradient(135deg, rgba(var(--color-primary), 1), rgba(var(--color-primary-light), 1))' } : {}),
+                          }}
+                        >
+                          <span className={`text-[11px] font-bold ${isActive ? 'text-white' : 'text-on-surface-variant'}`}>
                             {i + 1}
                           </span>
                         </div>
-                        
+
                         {/* Content */}
-                        <div className={`bg-surface-container-lowest rounded-2xl border transition-all duration-300 overflow-hidden ${isActive ? 'border-primary shadow-md' : 'border-outline-variant/30 hover:border-primary-light/50'}`}>
-                          <div className="p-4 flex justify-between items-center">
-                            <h4 className={`text-body-md font-bold transition-colors ${isActive ? 'text-primary' : 'text-on-background group-hover:text-primary-light'}`}>
+                        <div
+                          className={`bg-surface-container-lowest rounded-xl border overflow-hidden ${
+                            isActive
+                              ? 'border-primary/30'
+                              : 'border-outline-variant/20 hover:border-primary-light/30'
+                          }`}
+                          style={{
+                            transition: 'all 0.3s ease',
+                            ...(isActive ? { boxShadow: '0 4px 16px rgba(var(--color-primary), 0.08)' } : {}),
+                          }}
+                        >
+                          <div className="p-3.5 flex justify-between items-center">
+                            <h4
+                              className={`text-[14px] font-bold ${
+                                isActive ? 'text-primary' : 'text-on-background group-hover:text-primary-light'
+                              }`}
+                              style={{ transition: 'color 0.2s ease' }}
+                            >
                               {s.title}
                             </h4>
-                            <span className={`material-symbols-outlined text-outline-variant transition-transform duration-300 ${isActive ? 'rotate-180 text-primary' : ''}`}>
+                            <span
+                              className={`material-symbols-outlined text-[18px] ${isActive ? 'text-primary' : 'text-outline-variant'}`}
+                              style={{ transition: 'transform 0.3s ease, color 0.3s ease', transform: isActive ? 'rotate(180deg)' : 'rotate(0deg)' }}
+                            >
                               expand_more
                             </span>
                           </div>
-                          
+
                           {/* Expanded Description */}
-                          <div className={`transition-all duration-500 ease-in-out ${isActive ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
-                            <div className="px-4 pb-4 pt-0">
-                              <div className="h-px w-full bg-outline-variant/20 mb-3" />
-                              <p className="text-body-sm text-on-surface-variant leading-relaxed">
+                          <div
+                            style={{
+                              maxHeight: isActive ? '100px' : '0px',
+                              opacity: isActive ? 1 : 0,
+                              transition: 'max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease',
+                              overflow: 'hidden',
+                            }}
+                          >
+                            <div className="px-3.5 pb-3.5 pt-0">
+                              <div className="h-px w-full bg-outline-variant/15 mb-2.5" />
+                              <p className="text-[13px] text-on-surface-variant leading-relaxed">
                                 {s.desc}
                               </p>
                             </div>

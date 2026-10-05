@@ -14,42 +14,46 @@ export default function Expertise() {
   const { t } = useLanguage()
 
   return (
-    <section ref={ref} id="expertise" className="py-section-md md:py-section-lg px-5">
-      <div className="max-w-container-max mx-auto">
+    <section ref={ref} id="expertise" className="py-section-md md:py-section-lg px-5 relative overflow-hidden">
+      {/* Background accent */}
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-[0.03] pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(var(--color-primary-light), 1), transparent 70%)' }} />
+
+      <div className="max-w-container-max mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 reveal">
+        <div className="text-center mb-14 reveal">
           <span className="section-label">{t('expertise', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-semibold text-primary-dark">
+          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark">
             {t('expertise', 'title')}
           </h2>
         </div>
 
         {/* Cards grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {t('expertise', 'items').map((cap, i) => (
             <div
               key={cap.title}
               className={`cap-card reveal delay-${Math.min(i * 100, 500)}`}
             >
               {/* Number + icon row */}
-              <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-between mb-6">
                 <div className="icon-badge">
                   <span
-                    className="material-symbols-outlined"
+                    className="material-symbols-outlined text-[22px]"
                     style={{ fontVariationSettings: "'FILL' 0" }}
                   >
                     {capIcons[i]}
                   </span>
                 </div>
-                <span className="text-label-caps font-bold text-outline-variant tracking-widest">
+                <span className="text-[32px] font-extrabold text-outline-variant/20 leading-none">
                   {String(i + 1).padStart(2, '0')}
                 </span>
               </div>
 
-              <h3 className="text-body-lg font-bold text-on-background mb-3">
+              <h3 className="text-[17px] font-bold text-on-background mb-3 leading-tight">
                 {cap.title}
               </h3>
-              <p className="text-body-sm text-on-surface-variant">{cap.desc}</p>
+              <p className="text-[14px] text-on-surface-variant leading-relaxed">{cap.desc}</p>
             </div>
           ))}
         </div>

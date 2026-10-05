@@ -95,6 +95,7 @@ export const translations = {
     mindset: {
       label: 'My Philosophy',
       title: 'How I Think & Operate',
+      howIThink: 'How I Think',
       principles: [
         {
           title: 'Focus on the Problem, Not Just the Tech',
@@ -128,6 +129,7 @@ export const translations = {
       ]
     },
     philosophy: {
+      label: 'Professional Philosophy',
       quote: '"The goal is not to use technology for the sake of technology, but to leverage it as a lever to move the business forward."'
     },
     contact: {
@@ -146,7 +148,7 @@ export const translations = {
       ai: 'AI & Pemecahan Masalah',
       business: 'Bisnis',
       contact: 'Kontak',
-      connect: "Join"
+      connect: "Hubungi Saya"
     },
     hero: {
       label: 'Penyelesai Masalah Teknologi & Bisnis',
@@ -235,6 +237,7 @@ export const translations = {
     mindset: {
       label: 'Filosofi Saya',
       title: 'Cara Saya Berpikir & Beroperasi',
+      howIThink: 'Cara Saya Berpikir',
       principles: [
         {
           title: 'Fokus pada Masalah, Bukan Hanya Teknologi',
@@ -268,6 +271,7 @@ export const translations = {
       ]
     },
     philosophy: {
+      label: 'Filosofi Profesional',
       quote: '"Tujuannya bukanlah menggunakan teknologi demi teknologi itu sendiri, melainkan memanfaatkannya sebagai tuas untuk memajukan bisnis."'
     },
     contact: {
