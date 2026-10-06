@@ -15,7 +15,7 @@ export const translations = {
       desc: 'Technology entrepreneur focused on building practical solutions, understanding complex problems, and using technology and AI to create meaningful business value.',
       explore: 'Explore My Expertise',
       connect: 'Connect With Me',
-      company: 'PT Primadev Digital Technology'
+      company: 'Primadev Digital Technology'
     },
     about: {
       label: 'Who I Am',
@@ -76,7 +76,7 @@ export const translations = {
     business: {
       label: 'Business Entity',
       title: 'Building Technology Through Business',
-      desc: 'A technology-focused business built to provide practical digital solutions for individuals, businesses, and organizations. PT Primadev Digital Technology is the formal vehicle that translates expertise into delivered value - not just building technology, but using it to solve real problems.',
+      desc: 'A technology-focused business built to provide practical digital solutions for individuals, businesses, and organizations. Primadev Digital Technology is the formal vehicle that translates expertise into delivered value - not just building technology, but using it to solve real problems.',
       services: [
         'Digital Solutions',
         'Website & Application Development',
@@ -145,142 +145,142 @@ export const translations = {
     nav: {
       about: 'Tentang',
       expertise: 'Keahlian',
-      ai: 'AI & Pemecahan Masalah',
-      business: 'Bisnis',
+      ai: 'Pemanfaatan AI',
+      business: 'Perusahaan',
       contact: 'Kontak',
-      connect: "Hubungi Saya"
+      connect: 'Hubungi Saya'
     },
     hero: {
-      label: 'Penyelesai Masalah Teknologi & Bisnis',
+      label: 'Solusi Teknologi & Bisnis',
       tagline1: 'Teknologi. Bisnis.',
-      tagline2: 'Pemecahan Masalah.',
-      desc: 'Wirausahawan teknologi yang berfokus pada pembangunan solusi praktis, memahami masalah kompleks, dan menggunakan teknologi serta AI untuk menciptakan nilai bisnis yang berarti.',
-      explore: 'Jelajahi Keahlian Saya',
+      tagline2: 'Solusi Nyata.',
+      desc: 'Membantu bisnis berkembang lewat solusi teknologi yang praktis, memahami masalah operasional secara mendalam, serta memanfaatkan AI untuk hasil yang nyata.',
+      explore: 'Lihat Keahlian Saya',
       connect: 'Hubungi Saya',
-      company: 'PT Primadev Digital Technology'
+      company: 'Primadev Digital Technology'
     },
     about: {
-      label: 'Siapa Saya',
-      title: 'Titik Temu Antara Teknologi & Bisnis',
-      p1: 'Saya beroperasi di persimpangan antara kapabilitas teknologi dan strategi bisnis. Keyakinan utama saya adalah bahwa teknologi harus berfungsi sebagai pendorong pertumbuhan bisnis dan efisiensi operasional - bukan sekadar tujuan akhir.',
-      p2: 'Sebelum membangun apa pun, saya fokus untuk memahami "Mengapa" di balik setiap tantangan:',
-      q1: 'Apakah ini masalah yang tepat untuk dipecahkan?',
-      q2: 'Apakah solusi ini benar-benar akan diadopsi?',
-      q3: 'Apakah ini menciptakan nilai bisnis yang terukur?',
-      q4: 'Dapatkah proses ini diotomatisasi atau dioptimalkan?',
-      q5: 'Apa efek lanjutan (second-order) dari implementasi ini?',
-      q6: 'Bagaimana hal ini selaras dengan tujuan strategis jangka panjang?',
-      p3: 'Dengan memulai dari pertanyaan-pertanyaan ini, saya memastikan bahwa setiap solusi digital, integrasi AI, atau saran teknis yang diberikan berakar pada utilitas bisnis yang nyata, bukan sekadar hal baru dalam teknologi.',
-      pillars: ['Strategi Teknologi', 'Nilai Bisnis', 'Integrasi AI', 'Pemecahan Masalah']
+      label: 'Tentang Saya',
+      title: 'Menghubungkan Teknologi dan Strategi Bisnis',
+      p1: 'Bagi saya, teknologi dan strategi bisnis harus selalu sejalan. Teknologi bukan sekadar tren sesaat, melainkan sarana nyata untuk mempercepat pertumbuhan bisnis dan mempermudah operasional sehari-hari.',
+      p2: 'Sebelum membangun atau mengembangkan sistem, saya selalu memastikan tujuan utamanya jelas:',
+      q1: 'Apakah ini masalah utama yang memang harus diselesaikan?',
+      q2: 'Apakah solusi ini akan benar-benar dipakai oleh tim atau pengguna?',
+      q3: 'Apakah hasilnya terbukti membawa efisiensi dan keuntungan nyata bagi bisnis?',
+      q4: 'Bisakah proses kerja ini dipermudah atau diotomatisasi?',
+      q5: 'Apa dampak jangka panjangnya terhadap operasional tim?',
+      q6: 'Bagaimana langkah ini mendukung rencana dan target bisnis ke depan?',
+      p3: 'Dengan berlandaskan pertanyaan-pertanyaan ini, setiap sistem yang dibangun, pemanfaatan AI yang diterapkan, maupun konsultasi teknologi yang diberikan benar-benar bermanfaat langsung bagi kebutuhan bisnis Anda bukan sekadar ikut-ikutan teknologi baru.',
+      pillars: ['Strategi Teknologi', 'Nilai Bisnis Nyata', 'Pemanfaatan AI', 'Solusi Masalah']
     },
     expertise: {
-      label: 'Kemampuan Inti',
-      title: 'Apa yang Saya Lakukan',
+      label: 'Bidang Keahlian',
+      title: 'Layanan & Keahlian Saya',
       items: [
         {
           title: 'Solusi Digital',
-          desc: 'Merancang dan mengimplementasikan alat digital praktis yang menyederhanakan operasi dan memecahkan hambatan bisnis tertentu.'
+          desc: 'Merancang dan membuat sistem digital praktis yang mempermudah alur kerja serta mengatasi kendala operasional bisnis Anda.'
         },
         {
           title: 'Pengembangan Web & Aplikasi',
-          desc: 'Membangun aplikasi web dan seluler yang responsif, terukur, dan berpusat pada pengguna yang disesuaikan dengan kebutuhan bisnis.'
+          desc: 'Membangun website dan aplikasi mobile yang cepat, responsif, mudah digunakan, dan siap berkembang seiring pertumbuhan bisnis Anda.'
         },
         {
           title: 'Konsultasi Teknologi',
-          desc: 'Memberikan saran strategis mengenai adopsi teknologi, transformasi digital, dan optimalisasi infrastruktur.'
+          desc: 'Memberikan arahan strategis terkait pemilihan teknologi, digitalisasi proses kerja, serta pengembangan sistem yang tepat guna.'
         },
         {
-          title: 'AI Prompting',
-          desc: 'Merancang instruksi terstruktur yang membantu AI memahami konteks, batasan, tujuan, dan hasil yang diharapkan - mengarahkan AI untuk menghasilkan output yang andal dan relevan.'
+          title: 'Pemanfaatan & Prompting AI',
+          desc: 'Merancang instruksi terstruktur untuk AI agar menghasilkan output yang akurat, relevan, dan langsung bisa digunakan untuk pekerjaan sehari-hari.'
         },
         {
-          title: 'Pemecahan Masalah',
-          desc: 'Menerapkan kerangka kerja terstruktur untuk membedah tantangan bisnis yang kompleks dan merancang solusi berbasis teknologi yang efektif.'
+          title: 'Penyelesaian Masalah Bisnis',
+          desc: 'Menganalisis kendala bisnis yang rumit secara sistematis, lalu merancang solusi teknologi yang efektif dan mudah dijalankan.'
         }
       ]
     },
     ai: {
-      label: 'Lebih Dari Sekadar Prompting',
-      title: 'AI sangat kuat. Mengetahui cara mengarahkan, mengevaluasi, dan menantangnya jauh lebih penting.',
-      desc: 'AI Prompting bukan hanya tentang menulis instruksi yang lebih panjang. Ini tentang memahami apa yang kalian butuhkan, mengomunikasikannya dengan jelas, dan secara kritis mengevaluasi hasil yang didapatkan.',
-      processLabel: 'Proses Pengarahan AI',
-      steps: ['Masalah', 'Konteks', 'Arahan AI', 'Output', 'Analisis', 'Penyempurnaan', 'Hasil Terbaik'],
-      listTitle: 'Apa saja yang termasuk dalam pendekatan ini:',
+      label: 'Pemanfaatan AI yang Tepat Sasaran',
+      title: 'AI memiliki potensi luar biasa, namun hasil terbaiknya sangat bergantung pada cara kita mengarahkan, menguji, dan memanfaatkannya.',
+      desc: 'Memberikan arahan ke AI bukan sekadar menulis perintah yang panjang. Kuncinya adalah memahami apa yang Anda butuhkan, menyampaikannya secara jelas, dan memastikan hasilnya benar-benar sesuai kebutuhan bisnis.',
+      processLabel: 'Alur Kerja Pengarahan AI',
+      steps: ['Identifikasi Masalah', 'Pemberian Konteks', 'Instruksi Terarah', 'Hasil Awal', 'Uji & Evaluasi', 'Penyempurnaan', 'Solusi Siap Pakai'],
+      listTitle: 'Prinsip utama yang selalu saya terapkan:',
       list: [
-        'Memahami tujuan sebelum menulis satu instruksi pun',
-        'Memberikan AI konteks, batasan, dan ekspektasi yang tepat',
-        'Mengevaluasi output AI terhadap kebutuhan bisnis yang sebenarnya',
-        'Mengidentifikasi asumsi yang salah atau celah yang mungkin terlewat oleh AI',
-        'Melakukan iterasi pada pendekatan hingga output menjadi benar-benar berguna'
+        'Memahami target dan kebutuhan bisnis sebelum mulai menulis instruksi AI',
+        'Memberikan konteks, batasan, dan contoh yang jelas kepada AI',
+        'Memeriksa kembali hasil kerja AI agar sesuai dengan kenyataan di lapangan',
+        'Menemukan celah atau asumsi yang kurang tepat dari jawaban AI',
+        'Menyempurnakan instruksi secara bertahap hingga mendapatkan hasil yang optimal'
       ],
-      quote: 'AI adalah sebuah penguat (amplifier). Jika kalian memberikannya masalah yang tidak didefinisikan dengan baik, AI akan memberikan jawaban yang sangat fasih, berformat sempurna, namun sama sekali tidak berguna.'
+      quote: 'AI bekerja melipatgandakan arahan yang kita berikan. Jika masalah dasarnya belum jelas, AI hanya akan menghasilkan jawaban yang terdengar meyakinkan namun tidak bisa dipakai untuk menyelesaikan masalah.'
     },
     business: {
-      label: 'Entitas Bisnis',
-      title: 'Membangun Teknologi Melalui Bisnis',
-      desc: 'Bisnis berfokus pada teknologi yang dibangun untuk memberikan solusi digital praktis bagi individu, bisnis, dan organisasi. PT Primadev Digital Technology adalah kendaraan formal yang menerjemahkan keahlian menjadi nilai yang disampaikan - bukan hanya membangun teknologi, tetapi menggunakannya untuk memecahkan masalah nyata.',
+      label: 'Unit Bisnis',
+      title: 'Menghadirkan Solusi Teknologi Lewat Bisnis Nyata',
+      desc: 'Primadev Digital Technology adalah perusahaan resmi yang saya dirikan untuk memberikan solusi digital praktis bagi perorangan, UMKM, hingga perusahaan. Fokus kami bukan hanya membuat software, melainkan membantu bisnis berjalan lebih efisien dan bertumbuh lewat teknologi.',
       services: [
-        'Solusi Digital',
-        'Pengembangan Web & Aplikasi',
-        'Konsultasi Teknologi',
+        'Solusi & Sistem Digital',
+        'Pembuatan Website & Aplikasi',
+        'Konsultasi & Strategi Teknologi',
         'Pengembangan Produk Digital',
-        'Solusi Berbasis AI',
-        'Pemecahan Masalah Teknologi & Bisnis'
+        'Integrasi & Otomasi AI',
+        'Solusi Masalah Operasional Bisnis'
       ],
-      exploreBtn: 'Jelajahi Primadev Digital Technology',
+      exploreBtn: 'Kunjungi Website Primadev',
       stats: [
-        { val: 'Solusi', sub: 'Digital' },
-        { val: 'Integrasi', sub: 'AI' },
-        { val: 'Konsultasi', sub: 'Strategis' }
+        { val: 'Solusi', sub: 'Tepat Guna' },
+        { val: 'Teknologi', sub: 'Teruji & Modern' },
+        { val: 'Kolaborasi', sub: 'Profesional' }
       ]
     },
     mindset: {
-      label: 'Filosofi Saya',
-      title: 'Cara Saya Berpikir & Beroperasi',
-      howIThink: 'Cara Saya Berpikir',
+      label: 'Prinsip Kerja',
+      title: 'Pola Pikir & Cara Saya Bekerja',
+      howIThink: 'Prinsip Utama',
       principles: [
         {
-          title: 'Fokus pada Masalah, Bukan Hanya Teknologi',
-          quote: 'Solusi terbaik seringkali adalah yang paling sederhana namun berhasil.',
-          desc: 'Teknologi hanyalah alat yang digunakan untuk mengimplementasikannya.'
+          title: 'Fokus ke Solusi, Bukan Sekadar Alat',
+          quote: 'Solusi terbaik sering kali adalah yang sederhana, mudah dipakai, dan terbukti berhasil.',
+          desc: 'Teknologi adalah sarana pendukung. Yang terpenting adalah masalah bisnis Anda selesai dengan tuntas.'
         },
         {
-          title: 'Nilai Lebih dari Sekadar Hal Baru',
-          quote: 'Mengadopsi tren terbaru tidak ada artinya',
-          desc: "jika hal itu tidak menyelesaikan masalah nyata atau meningkatkan keuntungan."
+          title: 'Manfaat Nyata di Atas Tren Sesaat',
+          quote: 'Mengikuti tren teknologi terbaru tidak ada artinya jika tidak membawa manfaat nyata.',
+          desc: 'Setiap sistem atau fitur yang dibangun harus jelas pengaruhnya terhadap efisiensi atau keuntungan bisnis.'
         },
         {
-          title: 'Pertanyakan Hasil (Output)',
-          quote: 'Baik jawaban tersebut datang dari manusia atau sistem AI, itu tetap harus dievaluasi secara kritis.',
-          desc: 'Berpikir kritis adalah lapisan paling penting di atas alat apa pun - termasuk AI.'
+          title: 'Kritis Terhadap Hasil Akhir',
+          quote: 'Jawaban dari siapa pun termasuk dari AI harus selalu diuji dan diverifikasi.',
+          desc: 'Pemikiran logis dan teliti adalah kunci untuk memastikan sistem bekerja tanpa celah dan dapat diandalkan.'
         },
         {
-          title: 'Pemikiran Sistem (Systems Thinking)',
-          quote: 'Perubahan pada satu bagian bisnis seringkali memengaruhi bagian lain.',
-          desc: 'Solusi harus dirancang dengan mempertimbangkan keseluruhan sistem.'
+          title: 'Melihat Bisnis Secara Menyeluruh',
+          quote: 'Perubahan pada satu bagian sistem pasti berpengaruh ke bagian operasional lainnya.',
+          desc: 'Solusi selalu dirancang menyeluruh agar alur kerja tetap rapi dan tidak menimbulkan masalah baru di bagian lain.'
         }
       ],
-      approachTitle: 'Pendekatan Saya dalam Pemecahan Masalah',
+      approachTitle: 'Tahapan Kerja Saya',
       approachItems: [
-        { title: 'Pahami', desc: 'Pahami Inti Permasalahan' },
-        { title: 'Definisikan', desc: 'Tentukan Tujuan' },
-        { title: 'Susun Strategi', desc: 'Rumuskan Strategi' },
-        { title: 'Eksekusi', desc: 'Jalankan Solusi' },
-        { title: 'Evaluasi', desc: 'Evaluasi Hasilnya' },
-        { title: 'Iterasi', desc: 'Ulangi dan Tingkatkan' }
+        { title: '1. Pahami', desc: 'Bedah akar masalahnya' },
+        { title: '2. Tentukan', desc: 'Tetapkan target yang jelas' },
+        { title: '3. Rancang', desc: 'Susun strategi dan alur solusi' },
+        { title: '4. Eksekusi', desc: 'Bangun sistem secara terukur' },
+        { title: '5. Uji Coba', desc: 'Evaluasi hasil di lapangan' },
+        { title: '6. Sempurnakan', desc: 'Tingkatkan performa secara berkala' }
       ]
     },
     philosophy: {
-      label: 'Filosofi Profesional',
-      quote: '"Tujuannya bukanlah menggunakan teknologi demi teknologi itu sendiri, melainkan memanfaatkannya sebagai tuas untuk memajukan bisnis."'
+      label: 'Komitmen Profesional',
+      quote: '"Teknologi bukan dibangun untuk terlihat keren semata, melainkan untuk menjadi pendorong utama yang memajukan bisnis Anda."'
     },
     contact: {
       label: 'Hubungi Saya',
-      title: "Mari Bangun Sesuatu yang Berarti",
-      desc: "Apakah kalian mencari mitra teknologi, mengeksplorasi peluang berbasis AI, atau sekadar ingin mendiskusikan masalah yang kompleks - mari terhubung dan jelajahi bagaimana kita dapat menciptakan nilai bersama.",
+      title: 'Mari Berdiskusi dan Bekerja Sama',
+      desc: 'Apakah Anda membutuhkan konsultasi teknologi, ingin memanfaatkan AI dalam alur kerja bisnis, atau ingin berdiskusi mengenai kendala sistem yang sedang dihadapi saya siap membantu menemukan solusi terbaik.',
       emailBtn: 'Kirim Email',
-      linkedinBtn: 'LinkedIn',
-      rights: 'Seluruh hak cipta dilindungi undang-undang.'
+      linkedinBtn: 'Terhubung di LinkedIn',
+      rights: 'Hak Cipta Dilindungi.'
     }
   }
 }

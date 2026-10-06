@@ -1,5 +1,6 @@
 import useReveal from '../hooks/useReveal'
 import { useLanguage } from '../context/LanguageContext'
+import TiltCard from './TiltCard'
 
 const capIcons = [
   'domain',
@@ -23,38 +24,44 @@ export default function Expertise() {
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="section-label">{t('expertise', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark">
+          <h2 className="font-display text-h2-mobile md:text-h2 font-bold text-primary-dark">
             {t('expertise', 'title')}
           </h2>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Cards grid with 3D Tilt */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {t('expertise', 'items').map((cap, i) => (
-            <div
+            <TiltCard
               key={cap.title}
-              className={`cap-card reveal delay-${Math.min(i * 100, 500)}`}
+              maxTilt={8}
+              scale={1.02}
+              className={`reveal delay-${Math.min(i * 100, 500)} h-full`}
             >
-              {/* Number + icon row */}
-              <div className="flex items-center justify-between mb-6">
-                <div className="icon-badge">
-                  <span
-                    className="material-symbols-outlined text-[22px]"
-                    style={{ fontVariationSettings: "'FILL' 0" }}
-                  >
-                    {capIcons[i]}
-                  </span>
-                </div>
-                <span className="text-[32px] font-extrabold text-outline-variant/20 leading-none">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-              </div>
+              <div className="cap-card h-full flex flex-col justify-between">
+                <div>
+                  {/* Number + icon row */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="icon-badge">
+                      <span
+                        className="material-symbols-outlined text-[22px]"
+                        style={{ fontVariationSettings: "'FILL' 0" }}
+                      >
+                        {capIcons[i]}
+                      </span>
+                    </div>
+                    <span className="font-tech text-[28px] font-extrabold text-outline-variant/30 leading-none">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                  </div>
 
-              <h3 className="text-[17px] font-bold text-on-background mb-3 leading-tight">
-                {cap.title}
-              </h3>
-              <p className="text-[14px] text-on-surface-variant leading-relaxed">{cap.desc}</p>
-            </div>
+                  <h3 className="font-display text-[18px] font-bold text-on-background mb-3 leading-tight">
+                    {cap.title}
+                  </h3>
+                  <p className="text-[14px] text-on-surface-variant leading-relaxed">{cap.desc}</p>
+                </div>
+              </div>
+            </TiltCard>
           ))}
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function AIPrompting() {
         {/* Header */}
         <div className="max-w-3xl mb-12 reveal">
           <span className="section-label">{t('ai', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark leading-tight mb-4">
+          <h2 className="font-display text-h2-mobile md:text-h2 font-bold text-primary-dark leading-tight mb-4">
             {t('ai', 'title')}
           </h2>
           <p className="text-body-lg text-on-surface-variant leading-relaxed">
@@ -35,7 +35,7 @@ export default function AIPrompting() {
 
         {/* Flow visualization */}
         <div className="reveal delay-200 bg-surface-container-lowest rounded-2xl p-6 md:p-8 soft-shadow border border-outline-variant/15 mb-10">
-          <p className="text-[11px] text-outline font-bold tracking-[0.15em] uppercase mb-6 md:mb-8 text-center md:text-left">
+          <p className="font-tech text-[11px] text-outline font-bold tracking-[0.15em] uppercase mb-6 md:mb-8 text-center md:text-left">
             {t('ai', 'processLabel')}
           </p>
           <div className="flex flex-col md:flex-row items-center justify-between w-full gap-2 md:gap-0">

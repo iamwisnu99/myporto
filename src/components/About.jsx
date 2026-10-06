@@ -26,7 +26,7 @@ export default function About() {
         {/* Left */}
         <div className="md:col-span-5 reveal md:sticky md:top-24">
           <span className="section-label">{t('about', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark mb-8 leading-tight">
+          <h2 className="font-display text-h2-mobile md:text-h2 font-bold text-primary-dark mb-8 leading-tight">
             {t('about', 'title')}
           </h2>
 

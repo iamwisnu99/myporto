@@ -30,10 +30,10 @@ export default function Philosophy() {
       </div>
 
       <div className="max-w-3xl mx-auto relative z-10">
-        <p className="text-[11px] font-bold text-white/40 uppercase tracking-[0.2em] mb-8">
+        <p className="font-tech text-[11px] font-bold text-white/50 uppercase tracking-[0.25em] mb-8">
           {t('philosophy', 'label') || 'Professional Philosophy'}
         </p>
-        <h2 className="text-[clamp(1.75rem,5vw,3.5rem)] font-extrabold leading-tight text-white mb-8">
+        <h2 className="font-display text-[clamp(1.75rem,5vw,3.5rem)] font-extrabold leading-tight text-white mb-8 tracking-tight">
           {t('philosophy', 'quote')}
         </h2>
         <div className="w-20 h-1 mx-auto rounded-full" style={{ background: 'linear-gradient(90deg, rgba(var(--color-primary-light), 1), transparent)' }} />

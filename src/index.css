@@ -61,9 +61,11 @@
     --color-background-soft: 247, 249, 252;
     --color-surface-tint: 65, 92, 161;
     --color-button-primary: 2, 40, 109;
+    --color-accent-blue: 37, 99, 235;
   }
 
   .dark {
+    --color-primary-dark: 218, 226, 253;
     --color-tertiary-fixed-dim: 192, 193, 255;
     --color-on-secondary: 38, 49, 67;
     --color-tertiary-fixed: 225, 224, 255;

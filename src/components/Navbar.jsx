@@ -96,7 +96,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#"
-            className="font-extrabold text-[22px] text-primary tracking-tight hover:opacity-80"
+            className="font-display font-extrabold text-[22px] text-primary tracking-tight hover:opacity-80"
             style={{ transition: 'opacity 0.2s ease' }}
           >
             Prima Wisnu<span className="text-primary-light">.</span>

@@ -80,7 +80,10 @@ export default {
         full: "9999px",
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Outfit", "Inter", "sans-serif"],
+        display: ["Outfit", "sans-serif"],
+        tech: ["Space Grotesk", "monospace"],
+        mono: ["Space Grotesk", "monospace"],
       },
       fontSize: {
         "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
@@ -111,10 +114,30 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        floatSlow: {
+          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+          "50%": { transform: "translateY(-14px) rotate(2deg)" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
       },
       animation: {
         "fade-in-up": "fadeInUp 0.6s ease forwards",
         "fade-in": "fadeIn 0.5s ease forwards",
+        "marquee": "marquee 25s linear infinite",
+        "float": "float 4s ease-in-out infinite",
+        "float-slow": "floatSlow 7s ease-in-out infinite",
+        "shimmer": "shimmer 3s ease-in-out infinite",
       },
     },
   },

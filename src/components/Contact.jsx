@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="max-w-container-max mx-auto px-5 pt-section-md pb-16 md:pt-section-lg md:pb-20 text-center relative z-10">
         <span className="section-label reveal">{t('contact', 'label')}</span>
 
-        <h2 className="reveal text-h1-mobile md:text-h1 font-bold text-primary-dark mb-6 leading-tight">
+        <h2 className="reveal font-display text-h1-mobile md:text-h1 font-bold text-primary-dark mb-6 leading-tight">
           {t('contact', 'title')}
         </h2>
 
@@ -58,7 +58,7 @@ export default function Contact() {
         <div className="max-w-container-max mx-auto px-5 py-8 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-12 items-center">
           {/* Brand */}
           <div className="text-center lg:text-left">
-            <p className="text-[20px] font-extrabold text-primary">Prima Wisnu<span className="text-primary-light">.</span></p>
+            <p className="font-display text-[20px] font-extrabold text-primary">Prima Wisnu<span className="text-primary-light">.</span></p>
           </div>
 
           {/* Nav links */}
@@ -82,7 +82,7 @@ export default function Contact() {
           </nav>
 
           {/* Copyright */}
-          <p className="text-[13px] text-on-surface-variant/70 text-center lg:text-right">
+          <p className="font-tech text-[12px] text-on-surface-variant/70 text-center lg:text-right">
             © {new Date().getFullYear()} PRIMA WISNU ABROR AZMI.<br className="sm:hidden" /> {t('contact', 'rights')}
           </p>
         </div>

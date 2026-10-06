@@ -26,7 +26,7 @@ export default function Mindset() {
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="section-label">{t('mindset', 'label')}</span>
-          <h2 className="text-h2-mobile md:text-h2 font-bold text-primary-dark">
+          <h2 className="font-display text-h2-mobile md:text-h2 font-bold text-primary-dark">
             {t('mindset', 'title')}
           </h2>
         </div>
@@ -34,7 +34,7 @@ export default function Mindset() {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Principles — Bento Grid */}
           <div className="lg:col-span-7 space-y-5">
-            <h3 className="text-[18px] font-bold text-primary-dark mb-5 reveal">{t('mindset', 'howIThink')}</h3>
+            <h3 className="font-display text-[18px] font-bold text-primary-dark mb-5 reveal">{t('mindset', 'howIThink')}</h3>
             <div className="grid sm:grid-cols-2 gap-4">
               {t('mindset', 'principles').map((p, i) => {
                 const accent = principlesAccents[i] || principlesAccents[0]
